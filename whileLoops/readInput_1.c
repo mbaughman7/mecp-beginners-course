@@ -36,7 +36,7 @@ int main(void)
     *pGPIODmode |= (1 << 24); // Set the 24th bit
 
     // Configure PA0 as input mode
-    *pGPIOAmode &= ~(3 << 0); // Clear bits 0 and 1
+    *pGPIOAmode &= ~(3); // Clear bits 0 and 1
 
     while (1)
     {
